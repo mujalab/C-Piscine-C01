@@ -6,8 +6,14 @@
 /*   By: mujmoham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 12:37:34 by mujmoham          #+#    #+#             */
-/*   Updated: 2022/03/17 12:37:35 by mujmoham         ###   ########.fr       */
+/*   Updated: 2022/03/17 15:58:27 by mujmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 
+void	ft_div_mod(int a, int b, int *div, int *mod)
+{
+	*div = a / b;
+	*mod = a % b;
+}
