@@ -10,4 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+void	ft_swap(int *a, int *b)
+{
+	int c;
 
+	c = *a;
+	*a = *b;
+	*b = c;
+}
+
+void	ft_sort_int_tab(int *tab, int size)
+{
+	int i;
+	int k;
+
+	i = 0;
+	k = 0;
+	while (i < size)
+	{
+		k = i;
+		while (k > 0 && tab[k] < tab[k - 1])
+		{
+			ft_swap(tab + k, tab + k - 1);
+			k--;
+		}
+		i++;
+	}
+}
